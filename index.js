@@ -1,5 +1,5 @@
 const express = require("express");
-
+const cors = require("cors");
 const app = express();
 const PORT = 3000;
 
@@ -37,6 +37,8 @@ app.post("/api/users", (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, (err) => {
+    console.log(err);
+    
   console.log(`Server running on http://localhost:${PORT}`);
 });
