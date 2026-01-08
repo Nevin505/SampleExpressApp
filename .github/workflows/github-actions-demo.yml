@@ -2,7 +2,7 @@ name: GutHubAction Demo
 on: [push]
 jobs:
   Explore-github-Actions:
-    runs-on:  ip-172-31-68-167
+    runs-on:  [self-hosted, linux, x64]
     steps:
       - run: echo "hai this is a sample command"
   Explore-github-Actions-Sample:
