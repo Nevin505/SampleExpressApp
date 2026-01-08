@@ -2,13 +2,12 @@ name: GutHubAction Demo
 on: [push]
 jobs:
   Explore-github-Actions:
-    runs-on:  [self-hosted, linux, x64]
+    runs-on: [self-hosted, linux, x64]
     steps:
       - run: echo "hai this is a sample command runs `self-hosted` runner"
-      - run :  docker build -t sample-express-app .
+      - run: docker build -t sample-express-app ./Dockerfile .
       - run: docker run -d -p 3000:3000 --name my-sample-app sample-express-app
   Explore-github-Actions-Sample:
-    runs-on:  [self-hosted, linux, x64]
+    runs-on: [self-hosted, linux, x64]
     steps:
       - run: echo "hai this is a sample command for second job"
-
