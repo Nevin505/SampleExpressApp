@@ -8,6 +8,7 @@ jobs:
       - run: echo "Checking Dockerfile"
       - run: ls -la $GITHUB_WORKSPACE
       - run: echo "hai this is a sample command runs `self-hosted` runner"
+      - run: docker rm my-sample-app
       - run: docker rmi -f sample-express-app || true
       - run: docker build -t sample-express-app .
       - run: docker run -d -p 3000:3000 --name my-sample-app sample-express-app
