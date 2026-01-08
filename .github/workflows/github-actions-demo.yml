@@ -4,9 +4,9 @@ jobs:
   Explore-github-Actions:
     runs-on:  [self-hosted, linux, x64]
     steps:
-      - run: echo "hai this is a sample command"
+      - run: echo "hai this is a sample command runs `self-hosted` runner"
   Explore-github-Actions-Sample:
-    runs-on:  ubuntu-latest
+    runs-on:  [self-hosted, linux, x64]
     steps:
       - run: echo "hai this is a sample command for second job"
 
