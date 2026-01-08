@@ -1,0 +1,8 @@
+name: GutHubAction Demo
+on: [push]
+jobs:
+  Explore-github-Actions:
+    runs-on:  ubuntu-latest
+    steps:
+      - run: echo "hai this is a sample command"
+
