@@ -2,7 +2,7 @@ name: GutHubAction Demo
 on: 
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   Explore-github-Actions:
     runs-on: [self-hosted, linux, x64]
