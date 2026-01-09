@@ -1,5 +1,8 @@
 name: GutHubAction Demo
-on: [push]
+on: 
+  pull_request:
+    branches:
+      - main
 jobs:
   Explore-github-Actions:
     runs-on: [self-hosted, linux, x64]
@@ -14,5 +17,6 @@ jobs:
       - run: docker run -d -p 3000:3000 --name my-sample-app sample-express-app
   Explore-github-Actions-Sample:
     runs-on: [self-hosted, linux, x64]
+    needs: Explore-github-Actions
     steps:
       - run: echo "hai this is a sample command for second job"
