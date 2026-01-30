@@ -6,7 +6,7 @@ const PORT = 3000;
 // Middleware to parse JSON
 app.use(express.json());
 app.use(cors());
-// Root route
+
 app.get("/", (req, res) => {
   res.send("Hello from Express Server");
 });
