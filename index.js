@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 // Root route
 app.get("/", (req, res) => {
-  res.send("Hello from Express Server 🚀");
+  res.send("Hello from Express Server");
 });
 
 // Sample GET API
