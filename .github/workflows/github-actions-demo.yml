@@ -1,5 +1,5 @@
 name: GITHUB-DEMO-WORKFLOW
-run-name: ${{githun.actions}} is testing the github actions
+run-name: ${{github.actions}} is testing the github actions
 on: ['push']
 jobs:
   firstStage:
